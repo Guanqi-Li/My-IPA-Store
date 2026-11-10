@@ -1,0 +1,50 @@
+name: Import IPA from URL
+on:
+  workflow_dispatch:
+    inputs:
+      ipa_url:
+        description: "Direct HTTPS link to an IPA"
+        required: true
+        type: string
+      name:
+        description: "App name (optional)"
+        required: false
+        type: string
+      description:
+        description: "Description (optional)"
+        required: false
+        type: string
+      icon_url:
+        description: "HTTPS app icon (optional)"
+        required: false
+        type: string
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download IPA
+        env:
+          IPA_URL: ${{ inputs.ipa_url }}
+        run: |
+          python - <<'PY'
+          import os, urllib.parse
+          u=urllib.parse.urlsplit(os.environ["IPA_URL"])
+          if u.scheme != "https" or not u.hostname:
+              raise SystemExit("Expected HTTPS IPA URL")
+          PY
+          curl --fail --location --retry 2 --max-time 1800 --output /tmp/import.ipa "$IPA_URL"
+      - name: Publish IPA release and source
+        env:
+          GH_TOKEN: ${{ github.token }}
+          APP_NAME: ${{ inputs.name }}
+          APP_DESC: ${{ inputs.description }}
+          ICON: ${{ inputs.icon_url }}
+        run: |
+          python scripts/manage.py add --file /tmp/import.ipa --name "$APP_NAME" --description "$APP_DESC" --icon "$ICON"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/source.json
+          git diff --cached --quiet || { git commit -m "Update IPA catalog" && git push; }
