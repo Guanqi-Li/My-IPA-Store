@@ -1,0 +1,9 @@
+{
+  "name": "My IPA Store",
+  "subtitle": "个人 IPA 软件目录",
+  "description": "基于 GitHub Releases 的个人 IPA 软件源",
+  "iconURL": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+  "website": "https://guanqi-li.github.io/My-IPA-Store/",
+  "apps": [],
+  "news": []
+}
