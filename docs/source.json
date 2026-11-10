@@ -4,6 +4,26 @@
   "description": "基于 GitHub Releases 的个人 IPA 软件源",
   "iconURL": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
   "website": "https://guanqi-li.github.io/My-IPA-Store/",
-  "apps": [],
+  "apps": [
+    {
+      "name": "番茄小说_7.4.1_解锁会员",
+      "bundleIdentifier": "com.dragon.read",
+      "developerName": "Personal Collection",
+      "subtitle": "IPA",
+      "localizedDescription": "番茄小说_7.4.1_解锁会员",
+      "iconURL": "https://github.com/Guanqi-Li/My-IPA-Store/releases/download/%E7%95%AA%E8%8C%84%E5%B0%8F%E8%AF%B4/default.png",
+      "tintColor": "#5075E8",
+      "versions": [
+        {
+          "version": "7.4.1",
+          "buildVersion": "7.4.1.32",
+          "date": "2026-11-10",
+          "localizedDescription": "番茄小说_7.4.1_解锁会员",
+          "downloadURL": "https://github.com/Guanqi-Li/My-IPA-Store/releases/download/ipa-com.dragon.read-7.4.1-7.4.1.32/import.ipa",
+          "size": 311162875
+        }
+      ]
+    }
+  ],
   "news": []
 }
