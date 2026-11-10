@@ -6,6 +6,25 @@
   "website": "https://guanqi-li.github.io/My-IPA-Store/",
   "apps": [
     {
+      "name": "红果短剧_7.4.1_解锁会员",
+      "bundleIdentifier": "com.phoenix.video",
+      "developerName": "Personal Collection",
+      "subtitle": "IPA",
+      "localizedDescription": "红果短剧_7.4.1_解锁会员",
+      "iconURL": "https://github.com/Guanqi-Li/My-IPA-Store/releases/download/%E7%BA%A2%E6%9E%9C%E7%9F%AD%E5%89%A7/default.png",
+      "tintColor": "#5075E8",
+      "versions": [
+        {
+          "version": "7.4.1",
+          "buildVersion": "7.4.1.32",
+          "date": "2026-11-10",
+          "localizedDescription": "红果短剧_7.4.1_解锁会员",
+          "downloadURL": "https://github.com/Guanqi-Li/My-IPA-Store/releases/download/ipa-com.phoenix.video-7.4.1-7.4.1.32/import.ipa",
+          "size": 311488348
+        }
+      ]
+    },
+    {
       "name": "番茄小说_7.4.1_解锁会员",
       "bundleIdentifier": "com.dragon.read",
       "developerName": "Personal Collection",
