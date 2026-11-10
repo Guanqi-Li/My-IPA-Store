@@ -6,6 +6,25 @@
   "website": "https://guanqi-li.github.io/My-IPA-Store/",
   "apps": [
     {
+      "name": "微信_8.0.80（纯净版）",
+      "bundleIdentifier": "com.tencent.xin",
+      "developerName": "Personal Collection",
+      "subtitle": "IPA",
+      "localizedDescription": "微信_8.0.80（纯净版）",
+      "iconURL": "https://github.com/Guanqi-Li/My-IPA-Store/releases/download/%E5%BE%AE%E4%BF%A1/default.png",
+      "tintColor": "#5075E8",
+      "versions": [
+        {
+          "version": "8.0.80",
+          "buildVersion": "8.0.80.34",
+          "date": "2026-11-10",
+          "localizedDescription": "微信_8.0.80（纯净版）",
+          "downloadURL": "https://github.com/Guanqi-Li/My-IPA-Store/releases/download/ipa-com.tencent.xin-8.0.80-8.0.80.34/import.ipa",
+          "size": 422203801
+        }
+      ]
+    },
+    {
       "name": "抖音纯净版（忘记账号登录）",
       "bundleIdentifier": "com.ss.iphone.ugc.Aweme",
       "developerName": "Personal Collection",
