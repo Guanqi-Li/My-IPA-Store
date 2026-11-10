@@ -6,6 +6,25 @@
   "website": "https://guanqi-li.github.io/My-IPA-Store/",
   "apps": [
     {
+      "name": "抖音纯净版（忘记账号登录）",
+      "bundleIdentifier": "com.ss.iphone.ugc.Aweme",
+      "developerName": "Personal Collection",
+      "subtitle": "IPA",
+      "localizedDescription": "抖音纯净版（忘记账号登录）",
+      "iconURL": "https://github.com/Guanqi-Li/My-IPA-Store/releases/download/%E6%8A%96%E9%9F%B3/default.png",
+      "tintColor": "#5075E8",
+      "versions": [
+        {
+          "version": "41.0.0",
+          "buildVersion": "410017",
+          "date": "2026-11-10",
+          "localizedDescription": "抖音纯净版（忘记账号登录）",
+          "downloadURL": "https://github.com/Guanqi-Li/My-IPA-Store/releases/download/ipa-com.ss.iphone.ugc.Aweme-41.0.0-410017/import.ipa",
+          "size": 756828238
+        }
+      ]
+    },
+    {
       "name": "红果短剧_7.4.1_解锁会员",
       "bundleIdentifier": "com.phoenix.video",
       "developerName": "Personal Collection",
